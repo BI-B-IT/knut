@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knut Kolnar</title>
+  <meta name="description" content="Nettside for Knut Kolnar – forfatter, filosof og førsteamanuensis ved BI i Bergen." />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Knut Kolnar</a>
+      <nav class="site-nav" aria-label="Hovednavigasjon">
+        <a href="index.html" class="active">Hjem</a>
+        <a href="about.html">Om</a>
+        <a href="publications.html">Publikasjoner</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Forfatter · filosof · BI Bergen</p>
+          <h1>Knut Kolnar</h1>
+          <p class="intro">
+            Knut Kolnar er forfatter, filosof og førsteamanuensis ved Institutt for kommunikasjon og kultur ved BI i Bergen.
+            Han arbeider med temaer som begjær, forbruk, identitet, kjønn, populærkultur og samtidens medielandskap.
+          </p>
+          <div class="hero-actions">
+            <a href="about.html" class="button primary">Les mer om Knut</a>
+            <a href="publications.html" class="button secondary">Se publikasjoner</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-frame image-frame">
+            <img
+              src="images/knut.avif"
+              alt="Portrett av Knut Kolnar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Oversikt</p>
+          <h2>Om nettstedet</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Om</h3>
+            <p>
+              Biografi, faglige interesser og en introduksjon til Knut Kolnars arbeid med filosofi,
+              kulturforståelse og samtidsanalyse.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Publikasjoner</h3>
+            <p>
+              Bøker og tekster, blant annet <em>Mannedyret</em>, <em>Pornutopia</em> og
+              <em>Å leve på lånt begjær</em>.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Temaer</h3>
+            <p>
+              Begjær, forbruk, maskulinitet, identitet, populærkultur og hvordan samtidens markedskultur
+              former menneskers selvforståelse.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Knut Kolnar</p>
+      <p>Nettsideutkast</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
